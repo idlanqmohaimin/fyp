@@ -9,7 +9,7 @@ from mrcnn.visualize import display_instances
 import matplotlib.pyplot as plt
 
 # Root directory of the project
-ROOT_DIR = "/home/idlanqmohaimin/fyp/sawi_mrcnn"
+ROOT_DIR = "/root/fyp/sawi_mrcnn"
 
 # Import Mask RCNN
 sys.path.append(ROOT_DIR)  # To find local version of the library
