@@ -162,12 +162,12 @@ def train(model):
     """Train the model."""
     # Training dataset.
     dataset_train = CustomDataset()
-    dataset_train.load_custom("/home/idlanqmohaimin/fyp/sawi_mrcnn/datasets", "train")
+    dataset_train.load_custom("/root/fyp/sawi_mrcnn/datasets", "train")
     dataset_train.prepare()
 
     # Validation dataset
     dataset_val = CustomDataset()
-    dataset_val.load_custom("/home/idlanqmohaimin/fyp/sawi_mrcnn/datasets", "val")
+    dataset_val.load_custom("/root/fyp/sawi_mrcnn/datasets", "val")
     dataset_val.prepare()
 
     # *** This training schedule is an example. Update to your needs ***
