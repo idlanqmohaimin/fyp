@@ -80,7 +80,7 @@ def apply_mask(image, mask, color, alpha=0.5):
     return image
 
 
-def display_instances(image, boxes, masks, class_ids, class_names,
+def display_instances(imageid, image, boxes, masks, class_ids, class_names,
                       scores=None, title="",
                       figsize=(16, 16), ax=None,
                       show_mask=True, show_bbox=True,
@@ -163,7 +163,7 @@ def display_instances(image, boxes, masks, class_ids, class_names,
             p = Polygon(verts, facecolor="none", edgecolor=color)
             ax.add_patch(p)
     ax.imshow(masked_image.astype(np.uint8))
-    plt.savefig('/content/drive/MyDrive/MY214_Project_Updates/sawi_mrcnn/masked_images/test', bbox_inches='tight')
+    plt.savefig('/content/drive/MyDrive/MY214_Project_Updates/sawi_mrcnn/masked_images/tl/image_%s.png' % (str(imageid)), bbox_inches='tight')
     if auto_show:
         
         plt.show()
