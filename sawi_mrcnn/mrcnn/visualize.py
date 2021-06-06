@@ -111,7 +111,7 @@ def display_instances(imageid, image, boxes, masks, class_ids, class_names,
         auto_show = True
 
     # Generate random colors
-    colors = colors or random_colors(N)
+    colors = colors #or random_colors(N)
 
     # Show area outside image boundaries.
     height, width = image.shape[:2]
