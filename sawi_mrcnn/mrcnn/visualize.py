@@ -163,7 +163,7 @@ def display_instances(image, boxes, masks, class_ids, class_names,
             p = Polygon(verts, facecolor="none", edgecolor=color)
             ax.add_patch(p)
     ax.imshow(masked_image.astype(np.uint8))
-    plt.savefig('/root/fyp/sawi_mrcnn/masked_images/test1.png', bbox_inches='tight')
+    plt.savefig('/content/drive/MyDrive/MY214_Project_Updates/sawi_mrcnn/masked_images/test', bbox_inches='tight')
     if auto_show:
         
         plt.show()
